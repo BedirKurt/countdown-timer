@@ -2,3 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Red Hat Text", sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: hsl(235, 15%, 14%);
+}
+
+/* Small screens (mobile) */
+@media (max-width: 375px) {
+    .stars img,
+    .hills img {
+      width: 100vw;
+    }
+  
+    .main-container h1 {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+  
+    .countdown p {
+      font-size: 10vw;
+      padding: 0px;
+      margin: 15px;
+    }
+  
+    .countdown h3 {
+      font-size: 0px;
+    }
+  
+    .socials {
+      bottom: 10px;
+    }
+  
+    .attribution {
+      font-size: 10px;
+      text-align: center;
+      margin: 0px;
+      margin-top: 35%;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  
+    .hills {
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      padding: 0px;
+    }
+  }
+
+
+@media (min-width: 1600px) {
+  .stars img,
+  .hills img {
+    width: 1920px;
+  
+  }
+}
+
+@media (min-width: 1440px) {
+  .stars img,
+  .hills img {
+    width: 1600px;
+ 
+  }
+}
+
