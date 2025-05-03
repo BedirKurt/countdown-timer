@@ -7,9 +7,7 @@ import CountdownTimer from './components/CountdownTimer.vue';
 
 
 <template>
-
-  <div class="container mx-auto flex flex-col items-center justify-center
-    min-h-[30vh] sm:min-h-[40vh] md:min-h-[50vh] lg:min-h-[60vh] xl:min-h-[70vh]">
+  <div class="min-h-screen bg-stars bg-cover bg-no-repeat">
     <TimerHeader />
     <CountdownTimer />
     <TimerFooter />
@@ -22,5 +20,4 @@ import CountdownTimer from './components/CountdownTimer.vue';
   padding: 0;
   box-sizing: border-box;
 }
-
 </style>

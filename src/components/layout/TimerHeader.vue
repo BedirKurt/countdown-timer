@@ -1,13 +1,10 @@
 <template>
-    <header>
-        <div class="stars absolute">
-            <img src="/src/assets/images/bg-stars.svg" alt="stars"
-                class="main-container flex flex-col items-center justify-center">
-        </div>
-        <h1 class="text-white text-2xl uppercase tracking-[10px] mb-5">We're launching soon</h1>
+    <header class="overflow-hidden flex flex-col items-center justify-center">
+        <h1 class="text-center text-white uppercase tracking-[1vw] sm:tracking-[0.5vw] max-w-screen text-2xl pt-40 font-redhatFont">
+            We're launching soon
+        </h1>
     </header>
 </template>
 
 
-<style scoped>
-</style>
+<style scoped></style>

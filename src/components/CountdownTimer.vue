@@ -45,75 +45,39 @@ onUnmounted(() => {
     clearInterval(intervalId)
 })
 </script>
+
+
+
 <template>
-    <div class="stars absolute mx-auto container">
-        <img src="/src/assets/images/bg-stars.svg" alt="stars"
-            class="main-container flex flex-col items-center justify-center">
-    </div>
-    
-    <div class="countdown flex items-center justify-content-between text-center">
+
+    <div class="countdown flex justify-center text-center gap-2 sm:gap-16 mt-14 sm:mt-36 overflow-hidden">
         <div class="time-box">
-            <p class="p-6 m-8 text-5xl rounded-md relative z-10 min-w-[7vw]">{{ Days }}</p>
-            <h3 class="uppercase tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[3px] text-sm">Days
-            </h3>
+            <p
+                class="w-20 sm:w-28 h-20 sm:h-28 flex items-center justify-center text-3xl sm:text-7xl rounded-md font-redhatFont bg-countdownP text-pColor">
+                {{ Days }}</p>
+            <h3 class="uppercase tracking-widest text-xs font-redhatFont pt-2 text-cdh3Color">Days</h3>
         </div>
         <div class="time-box">
-            <p class="p-6 m-8 text-5xl rounded-md relative z-10 min-w-[7vw]">{{ Hours }}</p>
-            <h3 class="uppercase tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[3px] text-sm">Hours
-            </h3>
+            <p
+                class="w-20 sm:w-28 h-20 sm:h-28 flex items-center justify-center text-3xl sm:text-7xl rounded-md font-redhatFont bg-countdownP text-pColor">
+                {{ Hours }}</p>
+            <h3 class="uppercase tracking-widest text-xs font-redhatFont pt-2 text-cdh3Color">Hours</h3>
         </div>
         <div class="time-box">
-            <p class="p-6 m-8 text-5xl rounded-md relative z-10 min-w-[7vw]">{{ Minutes }}</p>
-            <h3 class="uppercase tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[3px] text-sm">Minutes
-            </h3>
+            <p
+                class="w-20 sm:w-28 h-20 sm:h-28 flex items-center justify-center text-3xl sm:text-7xl rounded-md font-redhatFont bg-countdownP text-pColor">
+                {{ Minutes }}</p>
+            <h3 class="uppercase tracking-widest text-xs font-redhatFont pt-2 text-cdh3Color">Minutes</h3>
         </div>
         <div class="time-box">
-            <p class="p-6 m-8 text-5xl rounded-md relative z-10 min-w-[7vw]">{{ Seconds }}</p>
-            <h3 class="uppercase tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[3px] text-sm">Seconds
-            </h3>
+            <p
+                class="w-20 sm:w-28 h-20 sm:h-28 flex items-center justify-center text-3xl sm:text-7xl rounded-md font-redhatFont bg-countdownP text-pColor">
+                {{ Seconds }}</p>
+            <h3 class="uppercase tracking-widest text-xs font-redhatFont pt-2 text-cdh3Color">Seconds</h3>
         </div>
     </div>
 
 </template>
 
 
-<style scoped>
-.countdown p {
-    background-color: hsl(236, 21%, 26%);
-    color: hsl(345, 95%, 68%);
-}
-
-.countdown p::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: hsla(235, 22%, 20%, 0.733);
-    transform: rotateX(240deg);
-    z-index: -1;
-}
-
-.countdown p::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background-color: hsla(236, 21%, 26%, 0.329);
-    transform: rotateX(200deg);
-    transform-origin: bottom;
-    box-shadow: inset 0 40px 25px rgba(0, 0, 0, 0.3);
-}
-
-.countdown h3 {
-    color: hsl(237, 18%, 59%);
-}
-
-
-.stars img{
-    width: 100vw;
-}
-</style>
+<style scoped></style>
